@@ -9,14 +9,12 @@ import java.util.ArrayList;
 public class Main {
     final static File DIR=new File("C:/Users/SHANE/Desktop/Business/files/");
     private static BufferedWriter writer;
-    //Reason for using static variables:
-    //Completed all operations in one class - having the main method
 
     public static void main(String[] args) {
 
         try
         {
-            //Checking if the DIR exist, if not nothing happens
+            //Checking if the DIR exist
             if(DIR.exists())
             {
                 ArrayList<File> binaryFiles=scanDirectory(DIR);
